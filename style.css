@@ -1,0 +1,559 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #F5F5F7;
+}
+
+.page1 {
+    height: 100%;
+    width: 100%;
+}
+
+.nav {
+    height: 8%;
+    width: 100%;
+    background-color: #F5F5F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.navlinks {
+    display: flex;
+    gap: 1.3rem;
+}
+
+.nav a {
+
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav2 {
+    height: 8%;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.nav2 span {
+    color: rgb(91, 91, 227);
+}
+
+.page1-top {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    padding: 35px;
+}
+
+.top-left {
+    height: 100%;
+    width: 70%;
+    font-size: 28px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.page1-top .top-left span {
+    color: #6E6E73;
+}
+
+.top-right {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.random {
+    display: flex;
+}
+
+.random h5 {
+    font-size: 20px;
+}
+
+.random p {
+    color: rgb(91, 91, 227);
+}
+
+#icon1 {
+    font-size: 36px;
+}
+
+.page1-bottom {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.carousel {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    cursor: grab;
+    padding: 0 20px;
+
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+
+.carousel .cboxes {
+    height: 100%;
+    width: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-position: center;
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+
+.carousel .cboxes:nth-child(1) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-mac-nav-202503?wid=400&hei=260&fmt=png-alpha&.v=M1Q3OGxnb1lBaHhqNjZ2OVRXZmx4VEpBUDFBeEhMZS9GUnNSYXdEd0hscisrUlZaSVRoWVYzU0Qra0FoTmUwNng2bitObzZwQzk4cEorV1dZdzhIazVVcFlOTkdoMWg4ZkdDS1ovMUlzcW8");
+}
+
+.carousel .cboxes:nth-child(2) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-iphone-nav-202502?wid=400&hei=260&fmt=png-alpha&.v=dW5XbHI1eDVpd01qWUU4bFRtWGZXOG9vbGw5MnhRZ3BpYVMwQTIvb2xsaDVoZlhhY1p4QWdsTjFNaGRHM3FYWW15d1FhSDJ0bkR0ZGZtUjZJNmFveFVockp1czQ4Q0pvWUU1bC9ERnl2dFE");
+}
+
+.carousel .cboxes:nth-child(3) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-ipad-nav-202405?wid=400&hei=260&fmt=png-alpha&.v=dW5XbHI1eDVpd01qWUU4bFRtWGZXNGFLQTJVNnlNQmQrVmRBYnZYei9jckUzelNmMnRxajE0NHhmMWtLazl6eG53M0FRZHBXNTh1U1lFVEtSR2YzTm5qbE56RWRpRFNIRXZvbkd2S0l5dTg");
+}
+
+.carousel .cboxes:nth-child(4) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-watch-nav-202409?wid=400&hei=260&fmt=png-alpha&.v=S0tSVzBtSkRkSFFhMm1zS1NmeWtkNDJNVmlnVytwalkvOTJ2M1BKWUREdkh5NTJ6cGtEemJOblBHR043ZjFkZzAzOVFHb3N0MkVmS01ZcFh0d1Y4R2oxdUo4aWtyK05IRkZuWjBWbW5HM00");
+}
+
+.carousel .cboxes:nth-child(5) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-airpods-nav-202409?wid=400&hei=260&fmt=png-alpha&.v=Q0Z1bWFqMUpRRnp3T0Y0VWJpdk1yNlJ5eGFhR1FVd2NNNDB0VWRUSzVCUFd1aTN5QlRYNG5PRjJxc2d1RklXbVM0TjRWdzF2UjRGVEY0c3dBQVZ6VFI0R1M4eFpKRTFIclV0ZHRqakVRd1k");
+}
+
+.carousel .cboxes:nth-child(6) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-airtags-nav-202108?wid=400&hei=260&fmt=png-alpha&.v=Q0Z1bWFqMUpRRnp3T0Y0VWJpdk1ydzduWDk4YUM5R1JVL2gwcEZnWWNaRFd1aTN5QlRYNG5PRjJxc2d1RklXbVM0TjRWdzF2UjRGVEY0c3dBQVZ6VFpQclc0OVE3cmhmS3FBaXd6cG8yYzg");
+}
+
+.carousel .cboxes:nth-child(7) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-appletv-nav-202210?wid=400&hei=260&fmt=png-alpha&.v=T0wvM1N3YUcxQ09qK0VNRkl1RU1BZFM5WnN0RmVZRmVXQ0FCUWJjbnJDald1aTN5QlRYNG5PRjJxc2d1RklXbVM0TjRWdzF2UjRGVEY0c3dBQVZ6VFZ3YmJrVi9SakQxWUcrYWQwVXc5VTA");
+}
+
+.carousel .cboxes:nth-child(8) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-homepod-nav-202301?wid=400&hei=260&fmt=png-alpha&.v=WVcvamRucHVMMWs5SXZ3bVJ3Q2hpZGR0czFXNWdCUW14eTN2U29pLzNMcld1aTN5QlRYNG5PRjJxc2d1RklXbVM0TjRWdzF2UjRGVEY0c3dBQVZ6VFJmbWU0TjJLamxsdTltNkZVZ1RhbDA");
+}
+
+.carousel .cboxes:nth-child(9) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-accessories-nav-202503?wid=400&hei=260&fmt=png-alpha&.v=QnhsNk96S0o4R1dkN2FveStNM1hwNzZGMHVrNGw2NTM5Vmk2bHZzMXQ3aUJGVHdnWkxMaklDeW9JYU5tT3FWeVBrcjVFNVdueFRVbVY3TGtiL2RjUVhQYS92MS9scmN4eTZLbFFkMHVzTVhuL2FLN3hwSUJhbzdFUHltVU1ldnQ");
+}
+
+
+.page2 {
+    height: 100%;
+    width: 100%;
+    padding: 30px 80px;
+}
+
+
+.page2 h2 {
+    font-size: 31px;
+    line-height: 6rem;
+}
+
+.page2 span {
+    color: #6E6E73;
+}
+
+.carousel1 {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    cursor: grab;
+    padding: 0 20px;
+
+
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.carousel1::-webkit-scrollbar {
+    display: none;
+}
+
+
+.carousel1 .cboxes {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: flex-end; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    position: relative;
+    border-radius: 25px;
+    padding: 29px;
+
+}
+
+
+.carousel1 .cboxes:nth-child(1) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-iphone-16-pro-202409?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=UzBXQnlhUWdraTNvNU1Kb3pEQlpXUHpnd0VsRWFiaWRaRHRaUXBvNTNkalNab1lJcUZwSFVRK1htYlNmZUtPTG54cStVNU5BQmhzbkxYRGxDWUc3R1lXVzNzT2dSajRTd2tFaEdoYUp2VnY1WVJVT21DTzBZRFlBTTZySFFMbHY");
+}
+
+.carousel1 .cboxes:nth-child(2) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-bts-offer-featured-202505_GEO_IN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=bTAvUVhobndWL01MVC9aenBVVGo5UWt3NHc3dStlS1AxQU12Y29qK3NjRE5lUEUzSmttZ2lyNTBTVjBuY1FxTi9mNDM5eHVLS1dJSTkyYTRRL1B3TWNmSGN3NTUxbDRHZDZXK1V3b1o4a1NoV1RhNU4rMWFsUDdCU3JqdjVjeEhka0xmckVNVTBkS20yTzkwa0dhU09n");
+}
+
+.carousel1 .cboxes:nth-child(3) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-macbook-air-202503?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=MjhMcWJ2MGZwbXEwdnBkcUN6ZnhyOWVOMytmanI1M0ZTQWR1RjlDMWJpNXFTRjNxbmh1UnU2R29ibGdpZUFXc0prY3crUWRsN1dqVjRnMHR5S1hVbk15N0N0R0lhUGhlMG1Tdmc3RjZVQ09NTUhYNlZ6OGxKNWpBMHlTSTlldko");
+}
+
+.carousel1 .cboxes:nth-child(4) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-ipad-air-202503?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=UzBXQnlhUWdraTNvNU1Kb3pEQlpXRFJ0OFRiWngrNGllYTMvQ1dlWDBQZjZXYXJlRUd1cTBYTnRnbTNlazIvMzRHeXB5TnVsU3R6Qjd0Y2JzbURyWEdJV2RaUklyUnViT0c4OGJXRWhUTnArYWpGdS9XeFgvbS9ITnNYOEhYaG4");
+}
+
+.carousel1 .cboxes:nth-child(5) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-watch-s10-202409?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=QWhYaUFuRS9hTUliZ3N5RWVCV09vbGtrQjBqdmhJbWlLcCtlQTMwc01SdjkvamYzRzRvcFlnajNacmhEOC9BeDE1UUxLT2t0cW42N3FvQzVqaGhrVVlSek45NHpYUG91NnZ3YmlDQlpUYnArYWpGdS9XeFgvbS9ITnNYOEhYaG4");
+}
+
+.carousel1 .cboxes:nth-child(6) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-waystobuy-202409_GEO_IN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=QWhYaUFuRS9hTUliZ3N5RWVCV09vdlduelpLeXVIL3ZVZU51dmhrR2dYS3FFMHhFSDhqV0JNYUQxSWJ4aDVUMm1td3JHMmlHM0d0VzBMMGs5ZHR4WjhCQXpaSDRuZ01TMmlKTG91OHlCWVdBcWl1UUN2VHU1cWlXZmNNdlI2a2U");
+}
+
+.carousel1 .cboxes:nth-child(7) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-iphone-16e-202502_GEO_IN?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=UzBXQnlhUWdraTNvNU1Kb3pEQlpXSzRWdVVUSklyLzFIUnk0cUZLSXhCVVIzWjZtanZvZXBzWDFVU2JjN3Z3cVJSeXJaL3JqNm9jc2psYU5Qelh0TmlzWjh1WkQ4MmluMWQxWnR4Y3hGMlk0L2ZKQkZvUTFDcWhFMmRvYjZnWWI");
+}
+
+.carousel1 .cboxes:nth-child(8) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-ipad-202503_GEO_IN?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=UzBXQnlhUWdraTNvNU1Kb3pEQlpXTStFaldkSE5jRzhvSUNFdVF4czhIaHFTRjNxbmh1UnU2R29ibGdpZUFXcy85S3R4M0M3WGhIQVNOK3lBdUI5K1pJa3h1d2NzUi9CSFVmaUZFaGVvZzFyR1R3SktoWWVaN25ZREdlOXZLelc");
+}
+
+.carousel1 .cboxes:nth-child(9) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-mac-studio-202503?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=MjhMcWJ2MGZwbXEwdnBkcUN6ZnhyMFozSSthUWxLelAxTitDZ3M4Tk5nbm45S05qekNUdVUwMVFyK1pKaERUd3NtS0NkZnlUKzBRdlpRai9zMDR0cTA2K1VNZGNlb0hPLzMyemJjWVkyQ0JMQzBoZ1NYMmRGQ2VZWXI2YVMzc2I");
+}
+
+.carousel1 .cboxes h4 {
+    font-size: 29px;
+    color: white;
+    line-height: 2rem;
+}
+
+.carousel1 .cboxes h3 {
+    font-size: 25px;
+        line-height: 1.8rem;
+}
+
+.carousel1 .cboxes h6 {
+    color: white;
+    font-size: 16px;
+     line-height: 1.4rem;
+     font-weight: 400;
+}
+
+.carousel1 .cboxes h5 {
+    background: linear-gradient(to right, rgb(0, 0, 255), rgb(239, 28, 239), rgb(237, 16, 16));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.4rem;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.page3 {
+    height: 90%;
+    width: 100%;
+    padding: 30px 80px;
+}
+
+
+.page3 h2 {
+    font-size: 31px;
+    line-height: 6rem;
+}
+
+.page3 span {
+    color: #6E6E73;
+}
+
+.carousel2 {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    cursor: grab;
+    padding: 0 20px;
+
+
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.carousel2::-webkit-scrollbar {
+    display: none;
+}
+
+
+.carousel2 .cboxes {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: flex-end; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    position: relative;
+    border-radius: 25px;
+    padding: 29px;
+
+}
+
+
+.carousel2 .cboxes:nth-child(1) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-specialist-help-202506?wid=4000&hei=4167&fmt=p-jpg&qlt=95&.v=TkJLQU9OWTZMS1N4dlhoOWl3SEhrUkxnN3NTOHN5WTV1c3NEYkc1TXhDMWorUGRVSzBNTnk4aWVXZTBsSnJkbEhjUnA4dFc4UjhxaGJyeTZ4TGxiTlExd2w0cFRwTkFXcVMrRy8xS0hPK0wvSlYzalNtQnlZRDd0YzdTaUlhTlo");
+}
+
+.carousel2 .cboxes:nth-child(2) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-taa-202505?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=cFEvalhFakpZVzg4RFZsWktqbXFNY0RvMUw4Rm9vb3JCaDFWOTNnU01UOVNTeEZoVVBncVRqTkNMNS9uNklFcEtYeVk3dW9BYmZDa2xxQitSOWhMaG9GTzZCL2trL3hMU1d2K2ZPcTVKWXM");
+}
+
+.carousel2 .cboxes:nth-child(3) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-TAA-202310?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=VXV6Z09DaTFST3FqTnRkTjNkSENPM1ZnVFR5VGxOMG5WYlh6ZVpnWVpmOVNTeEZoVVBncVRqTkNMNS9uNklFcGdNL0tvRHFBWjFabEJvUTIxa3lDRWI2aER5OTZhZjhhVzlPaThxMkc0QVE");
+}
+
+.carousel2 .cboxes:nth-child(4) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-card-40-business-202409_GEO_IN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=alV4a1Q5dWpXakxENUdPdUc5bk5oL3AvbkFpTUJaVTl5YXRNYno3eGE5aXFFMHhFSDhqV0JNYUQxSWJ4aDVUMm1td3JHMmlHM0d0VzBMMGs5ZHR4WjNqb1RJQWJGSnhVM2c1V3gzR1hhMHFHUTVhN1k1UDMwUiszWWU3d2JvUTc");
+}
+
+.carousel2 .cboxes:nth-child(5) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-personal-setup-202408?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=cFhHZjJBWFBWT2pMQnNFR2RGWlEwWlNLRUlsMkFxY1ZMQzZzY0tkenJrbmJpYlE0VldEazFQNXh6WFBPRkF3SmNva0xZQWFEV2ljOWRGNWZJRk4vWGpyanhrWU1SUk1JdlhicWJrdXd2djlzeDRiY2xGcWt2YVRkSWVZeUhQK1U");
+}
+
+.carousel2 .cboxes:nth-child(6) {
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/apple-support-app-202308_GEO_IN?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=U25QdmFIeE1NK0VtUHd0WkJwTGhqVWs3bVpiZklLN3pnSnl3R2xZTW9uTWsrNUZoNXdjRTN6Qk9kZzJzT0IxWnNtS0NkZnlUKzBRdlpRai9zMDR0cTlpRlBzVWZ0N3E4WWNsd05CSlZ3Y1VYdWdhc2hEMEFQRHFhZnZMUXBidmU");
+}
+
+.carousel2 .cboxes h4 {
+    font-size: 24px;
+    color: white;
+    line-height: 2rem;
+}
+
+.carousel2 .cboxes h3 {
+    font-size: 25px;
+        line-height: 1.8rem;
+}
+
+.carousel2 .cboxes h6 {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+     line-height: 1.4rem;
+     font-weight: 400;
+}
+
+.carousel2 .cboxes h5 {
+color: white;
+    line-height: 1.4rem;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+
+
+.page-7 {
+    height: 120%;
+    width: 100%;
+    padding: 30px 80px;
+}
+
+.page-7 h2 {
+    font-size: 31px;
+}
+
+.page-7 span {
+    color: #6E6E73;
+}
+
+.page7-top {
+    height: 10%;
+    width: 100%;
+}
+
+.page7-mid {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.page7-mid-left {
+    height: 92%;
+    width: 30%;
+    border-radius: 20px;
+    padding: 20px;
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-bts-edu-macbook-air-ipad-air-202503?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=bTAvUVhobndWL01MVC9aenBVVGo5YWZmUzB4a3czWENOTU1QWVJ1K01WWk5LOEsyMEhpRHE1T1EzSDFwQVpKVzF1WTFUcUFiTi80Y2ZLM2ZEQmtMcjJhUXpzSGp3b1lnNUp6M2lSQzZEVVBiYmVpOUU2RG04OHJUUjJybTZTeHFHaXB3VUEzd1huUnhZRnQ3eTQ1QUdB");
+    background-size: cover;
+}
+
+.page7-mid-left h4 {
+    font-size: 25px;
+}
+
+.page7-mid-left p {
+    font-size: 16px;
+}
+
+.page7-mid-mid {
+    height: 92%;
+    width: 30%;
+    border-radius: 20px;
+    padding: 20px;
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-education-202505_GEO_IN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=TysyM3c4L0xvQ1dZWVNWTXZ0ekxPSittWmk3eDdiUncra1dwblN1ZGNvU3FFMHhFSDhqV0JNYUQxSWJ4aDVUMm1td3JHMmlHM0d0VzBMMGs5ZHR4WjVlSkU1Z2MySlVkS01WT1YvNHpYRk5pSjMxeUtlRXFVTEgzVzJ3cUlFMjc");
+    background-size: cover;
+    color: white;
+}
+
+.page7-mid-mid h4 {
+    font-size: 25px;
+}
+
+.page7-mid-mid p {
+    font-size: 16px;
+}
+
+.page7-bottom {
+    height: 35%;
+    width: 100%;
+}
+
+.page7-bottom h2 {
+    line-height: 4rem;
+}
+
+#btnn1 {
+    padding: 15px 28px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: #F5F5F7;
+    font-size: 14px;
+}
+
+
+
+.footer {
+    height: 80%;
+    width: 100%;
+    padding: 0px 80px;
+}
+
+.footer-top {
+    display: flex;
+}
+
+.footer-top p {
+    color: #535353;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 30px 0px 30px 0px;
+}
+
+.bottom-boxes {}
+
+.footer-down1 {
+    display: flex;
+    width: 100%;
+
+    color: #535353;
+}
+
+.footer-down2 {
+    display: flex;
+    width: 100%;
+
+    color: #535353;
+}
+
+.footer-down2 p {
+    padding-right: 2rem;
+}
+
+.footer-down2 h6 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 22rem;
+    color: #535353;
+}
+
+
+.footer-down2 .downlinks {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.footer-down2 .downlinks a {
+    color: #535353;
+}
+
+.footer-down3 {
+    width: 100%;
+    height: 2px;
+    background-color: #535353;
+    ;
+}
