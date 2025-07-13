@@ -515,7 +515,7 @@ color: white;
 
 .carousel3 .cboxes.image-up .carousel-text {
     width: 100%;
-    text-align: center;
+padding: 20px 0px 0px 44px;
 }
 
 .carousel3 .cboxes:nth-child(2) {
